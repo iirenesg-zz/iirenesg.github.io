@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "@ashthornton/asscroll": "^2.0.2",
     "@barba/core": "^2.9.7",
