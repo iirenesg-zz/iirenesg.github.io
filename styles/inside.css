@@ -1,5 +1,6 @@
 body {
-    background-color: #f3f6fa;
+    background-color: #000;
+    color: #fff;
 }
 
 .container {
@@ -10,7 +11,7 @@ body {
 
 h1, h2 {
     padding-bottom: 5px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     text-transform: uppercase;
     display: inline-block;
 }
@@ -34,6 +35,10 @@ h1, h2 {
     font-size: 24px;
 }
 
+.main-content {
+    margin-top: -150px;
+}
+
 .text-block {
     background-color: #0CC2C4;
     padding: 20px 30px;
@@ -45,11 +50,15 @@ h1, h2 {
     max-width: 500px;
 }
 
+.hero-text {
+    padding: 0 15px 25px;
+    transform: translateY(-150px);
+}
+
 .showcase-wrap {
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-color: #fff;
     margin: 0 auto;
 }
 
@@ -63,6 +72,15 @@ h1, h2 {
 
 .last-block {
     margin-bottom: 80px;
+}
+
+.reversed {
+    background-color: #fff;
+    color: #000;
+}
+
+.reversed h1, .reversed h2 {
+    border-color: #000;
 }
 
 @media (min-width: 600px) {

@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800" rel="stylesheet">
 	<link rel="stylesheet" href="styles/style.css">
-	<link rel="stylesheet" href="styles/inside.css">
+	<link rel="stylesheet" href="styles/about.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.ico">
 </head>
@@ -34,42 +34,58 @@
 		<ul class="menu-content">
             <li class="menu-item">
                 <a href="about.html" class="menu-link">
-                    <img src="img/texture.jpg" class="js-image" alt="">
+                    <img src="img/about1.png" class="js-image" alt="">
                     <div class="menu-item-text"><span>About</span></div>
                 </a>
+                <div class="color-slide"></div>
             </li>
+			
 			<li class="menu-item">
-                <a href="design.html" class="menu-link">
-                    <img src="img/texture.jpg" class="js-image" alt="">
-                    <div class="menu-item-text"><span>Design</span></div>
-                </a>
-            </li>
-			<li class="menu-item">
-                <a href="development.html" class="menu-link">
-                    <img src="img/texture.jpg" class="js-image" alt="">
+                <a href="error.html" class="menu-link">
+                    <img src="img/dev4.jpg" class="js-image" alt="">
                     <div class="menu-item-text"><span>Development</span></div>
                 </a>
+                <div class="color-slide"></div>
             </li>
+            
             <li class="menu-item">
-                <a href="coding.html" class="menu-link">
-                    <img src="img/texture.jpg" class="js-image" alt="">
+                <a href="error.html" class="menu-link">
+                    <img src="img/coding.png" class="js-image" alt="">
                     <div class="menu-item-text"><span>Creative Coding</span></div>
                 </a>
+                <div class="color-slide"></div>
+            </li>
+            <li class="menu-item">
+                <a href="error.html" class="menu-link">
+                    <img src="img/diseno_v.jpg" class="js-image" alt="">
+                    <div class="menu-item-text"><span>Design</span></div>
+                </a>
+                <div class="color-slide"></div>
             </li>
 		</ul>
 	</nav>
 
-
 	<div class="wrapper">
 	    <div class="container">
-
+            <div class="info-wrap">
+                <h1>About me</h1>
+                <p>Hello!</p>
+                <p>I’m a graphic designer and front-end developer from Costa Rica.</p>
+                <p>But before any of that, I was a mathematician, one that enjoyed racking her brain thinking about the complex problems of pure mathematics, but wanted to bring that way of thinking to other areas and other people as well.</p>
+                <p>While looking for another place, I went into art school and specialized in graphic design. I loved how design, just like math, can be thought of as problem solving, and both require a lot of creativity to be able to do it.</p>    
+                <p>I then got into web design, and eventually web development, a field that has kept my attention and love for a while, since I’ve found that there’s no limit to what you can accomplish with code.</p>    
+                <p>Something that I enjoy a lot is looking for ways to connect areas and tools that don’t seem to go together, and I’ve found in creative coding and algorithmic design a place where I can use my love for math, design and programming all together.</p>    
+                <p>I’m very excited about the time we are living in, a time where technology is easily accessible and every day people come up with new and amazing ways to use it. </p>    
+                <p>I hope I can be a part of it.</p>
+            </div>
+            <div class="separator"></div>
 	    </div>
+        <canvas class="about-canvas" id="main-canvas"></canvas>
 	</div>
-	<!-- end barba -->
 
-	<div class="curtain"></div>
 	<script type="module" src="js/main.js"></script>
-	<script type="module" src="js/inside.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+	<script type="module" src="js/about.js"></script>
 
 </body>
 </html>

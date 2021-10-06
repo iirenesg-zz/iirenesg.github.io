@@ -1,5 +1,3 @@
-// Original code by The Wizard Bear
-
 const string = "-ii-"; //words to be displayed
 const size = window.innerWidth > 1400 ? 500 : window.innerWidth > 600 ? 300 : 150; //font size
 const fontFile = "./Satisfy.ttf";
@@ -35,7 +33,7 @@ window.preload = () => {
 }
 
 window.setup = () => {
-	createCanvas(windowWidth, 768);
+	createCanvas(windowWidth, windowHeight);
 	colorMode(HSB, 100);
 	background(backgroundColor);
 	textFont(font);

@@ -18,7 +18,7 @@ nav.is-open {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,8 +29,8 @@ nav.is-open {
 }
 
 .logo {
-  width: 75px;
-  height: 21px;
+  width: 90px;
+  height: 40px;
 }
 
 .svg-logo {
@@ -119,27 +119,15 @@ nav.is-open .menu-content {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.curtain{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background: #949494;
-    transform: translate(0,100%)
-}
-
-
 @media (min-width: 600px) {
+  .header {
+    padding: 20px 30px;
+  }
   .menu-item {
     height: auto;
     border-right: 15px solid #000;
     border-bottom: 0;
     width: 25vw;
-  }
-  .menu-item:last-of-type {
-    /* border: none; */
   }
   .menu-content {
     flex-direction: row;
