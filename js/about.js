@@ -11,7 +11,7 @@ const individualZOffset = 0; //how far away the points/lines are from each other
 
 const lineSpeed = 5; //the maximum amount each point can move each frame
 
-const newPointsCount = 9; //the number of new points added when the mouse is dragged
+const newPointsCount = 2; //the number of new points added when the mouse is dragged
 const numStartingPoints = 1000;
 const startingOffset = 400;
 const particlePersist = 0.999;
@@ -87,7 +87,7 @@ window.draw = () => {
   }
 }
 
-window.mouseDragged = () => {
+window.mouseMoved = () => {
   for (let i = 0; i < newPointsCount; i++) {
     const newPoint = getPoint(mouseX, mouseY);
     points[points.length] = newPoint;
