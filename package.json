@@ -3,13 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "@ashthornton/asscroll": "^2.0.2",
-    "@barba/core": "^2.9.7",
-    "gsap": "^3.8.0",
-    "three": "^0.133.0"
+    "gsap": "^3.8.0"
   },
   "devDependencies": {
-    "@parcel/transformer-glsl": "^2.0.0-rc.0",
     "@parcel/transformer-image": "^2.0.0-rc.0",
     "parcel-bundler": "^1.12.5"
   },
