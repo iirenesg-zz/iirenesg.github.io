@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="styles/inside.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="preconnect" href="https://res.cloudinary.com">
 </head>
 <body>
 	<div class="header">
@@ -33,7 +34,7 @@
     <nav>
 		<ul class="menu-content">
             <li class="menu-item">
-                <a href="error.html" class="menu-link">
+                <a href="about.html" class="menu-link">
                     <img src="img/about1.png" class="js-image" alt="">
                     <div class="menu-item-text"><span>About</span></div>
                 </a>
@@ -49,7 +50,7 @@
             </li>
             
             <li class="menu-item">
-                <a href="error.html" class="menu-link">
+                <a href="coding.html" class="menu-link">
                     <img src="img/coding.png" class="js-image" alt="">
                     <div class="menu-item-text"><span>Creative Coding</span></div>
                 </a>
@@ -65,39 +66,53 @@
 		</ul>
 	</nav>
 
+    <div class="load-wrap hidden">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
 	<div class="wrapper">
         <div class="hero-wrap">
-            <video class="video-hero" autoplay="true" muted loop="true" width="100%" height="500" crossorigin="anonymous">
-                <source src="https://res.cloudinary.com/iireii/video/upload/v1633406454/samples/sea-turtle.mp4" type="video/mp4">
+            <video id="hero-trigger" class="video-hero" autoplay="true" muted loop="true" width="1900" height="500" crossorigin="anonymous">
+                <source src="https://res.cloudinary.com/iireii/video/upload/v1633788496/Portfolio/flowfield_our9rd.mp4" type="video/mp4">
             </video>
         </div>
 	    <div class="container center-text hero-text reversed">
             <h1>Creative Coding</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et dolorem beatae cumque ad doloremque iusto corrupti ut nemo. Voluptates vel deleniti animi velit vitae accusamus beatae iste laboriosam illo.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et dolorem beatae cumque ad doloremque iusto corrupti ut nemo. Voluptates vel deleniti animi velit vitae accusamus beatae iste laboriosam illo.</p>
+            <p>"Generative art refers to any art practice where the artist creates a process, such as a set of natural language rules, a computer program, a machine, or other procedural invention, which is then set into motion with some degree of autonomy contributing to or resulting in a completed work of art."</p>
+            <p>- Philip Galanter</p>
 	    </div>
         <div class="main-content">
-            <div class="showcase-wrap reversed">
-                <video class="video-hero" loop="true" width="50%" height="50%" crossorigin="anonymous">
-                    <source src="https://res.cloudinary.com/iireii/video/upload/v1633406454/samples/sea-turtle.mp4" type="video/mp4">
+            <div class="showcase-wrap show-up">
+                <video id="life-trigger" controls class="video-square" muted loop="true" width="600" height="600" crossorigin="anonymous">
+                    <source src="https://res.cloudinary.com/iireii/video/upload/v1633749600/Portfolio/Life30_agihqc.mp4" type="video/mp4">
                 </video>
-                <div class="showcase-text">
+                <div class="showcase-text reversed">
                     <h2>Life 3.0</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos libero error numquam, corporis optio sapiente ipsam fuga doloribus nemo quia cumque expedita, ullam laborum, magni laboriosam quam dolorem dolore.</p>
+                    <p>"It is indeed a surprising and fortunate fact that nature can be expressed by relatively low-order mathematical functions." - Rudolf Carnap</p>
+                    <p>Understanding the movement and behavior patterns of nature is a fascinating subject. As a way of exercising my ability to interpret natural systems with code, I developed a series of small animations in processing and p5.js, each portraying some sort of life.</p>
+                    <p>The focus of the exercises was movement, and the visual aspect was reduced to lines and geometrical shapes, taking advantage of the library's built-in methods.</p>
                 </div>
             </div>
-            <div class="container center-text">
+            <div class="container center-text show-up">
                 <h2>Algorithmic Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et dolorem beatae cumque ad doloremque iusto corrupti ut nemo. Voluptates vel deleniti animi velit vitae accusamus beatae iste laboriosam illo.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et dolorem beatae cumque ad doloremque iusto corrupti ut nemo. Voluptates vel deleniti animi velit vitae accusamus beatae iste laboriosam illo.</p>
+                <p>"When I am working on a problem, I never thing about beauty. I think only how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong."</p>
+                <p>- Buckminster Fuller</p>
             </div>
-            <div class="showcase-wrap reversed last-block">
-                <video class="video-hero" loop="true" width="50%" height="50%" crossorigin="anonymous">
-                    <source src="https://res.cloudinary.com/iireii/video/upload/v1633406454/samples/sea-turtle.mp4" type="video/mp4">
+            <div class="gallery container show-up">
+                <img width="40" height="40" class="gallery-img" crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633791898/Portfolio/coding-gallery-1_zqa2gm.png" />
+                <img width="40" height="40" class="gallery-img" crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633791921/Portfolio/coding-gallery-2_mgfpd7.png" />
+                <img width="40" height="40" class="gallery-img" crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633791914/Portfolio/coding-gallery-3_pif4gj.png" />
+                <img width="40" height="40" class="gallery-img" crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633791943/Portfolio/coding-gallery-4_y2n1od.png" />
+                <img width="40" height="40" class="gallery-img" crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633791940/Portfolio/coding-gallery-5_r7jovf.png" />
+                <img width="40" height="40" class="gallery-img" crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633791943/Portfolio/coding-gallery-6_hbepwo.png" />
+            </div>
+            <div class="showcase-wrap show-up">
+                <video id="int-trigger" class="video-trigger video-large" controls muted loop="true" width="840" height="473" crossorigin="anonymous">
+                    <source src="https://res.cloudinary.com/iireii/video/upload/v1633786670/Portfolio/interactive_kmbuim.mp4" type="video/mp4">
                 </video>
-                <div class="showcase-text">
-                    <h2>Interactive Installations</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos libero error numquam, corporis optio sapiente ipsam fuga doloribus nemo quia cumque expedita, ullam laborum, magni laboriosam quam dolorem dolore.</p>
+                <div class="showcase-text reversed">
+                    <h2>Interactive Animations</h2>
+                    <p>The main advantage of working with code instead of video, is that you have the ability to make your program react to external inputs, including user interactions.</p>
+                    <p>Letting the user engage with a program changes the experience completely, making the user a participant instead of just an observer.</p>
                 </div>
             </div>
         </div>

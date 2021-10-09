@@ -5,6 +5,10 @@ body{
     position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
 nav {
   position: fixed;
   top: 0;
