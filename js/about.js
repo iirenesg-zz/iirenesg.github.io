@@ -16,7 +16,6 @@ const numStartingPoints = 1000;
 const startingOffset = 400;
 const particlePersist = 0.999;
 const maxPoints = 2000;
-const imgAR = 2318 / 2571;
 const canvasWidth = window.innerWidth > 600 ? 2 * window.innerWidth / 3 : window.innerWidth;
 const canvasHeight = window.innerHeight - 85;
 
@@ -24,7 +23,7 @@ let points = [];
 let img;
 
 window.preload = () => {
-  img = loadImage("aboutp1.jpg");
+  img = loadImage("portrait2.jpg");
 }
 
 window.setup = () => {
@@ -33,14 +32,7 @@ window.setup = () => {
 
   loadPixels();
   img.loadPixels();
-
-  const canvasAR = width / height;
-
-  if (imgAR > canvasAR) {
-    img.resize(0, height);
-  } else {
-    img.resize(width, 0);
-  }
+  img.resize(0, height);
   
   image(img, 0, 0);
 
@@ -65,17 +57,18 @@ window.draw = () => {
     let newPX = p.x + map(noise(noiseX, noiseY, noiseZ), 0, 1, -lineSpeed, lineSpeed);
     let newPY = p.y + map(noise(noiseX, noiseY, noiseZ + 214), 0, 1, -lineSpeed, lineSpeed);
     const pixColor = img.get(p.x, p.y);
-    stroke(pixColor[0] || 0, pixColor[1] || 0, pixColor[2] || 0);
-    line(p.x, p.y, newPX, newPY);
-    p.x = newPX;
-    p.y = newPY;
 
-    if (random() > particlePersist) {
+    if (random() > particlePersist || pixColor[3] === 0) {
       p.isMoving = false;
     }
 
     if (!p.isMoving || p.x > width || p.x < 0 || p.y < 0 || p.y > height) {
       points.splice(pt, 1);
+    } else {
+      stroke(pixColor[0] || 0, pixColor[1] || 0, pixColor[2] || 0);
+      line(p.x, p.y, newPX, newPY);
+      p.x = newPX;
+      p.y = newPY;
     }
   }
 

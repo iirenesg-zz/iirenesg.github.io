@@ -116,7 +116,7 @@ nav.is-open .menu-content {
 
 .menu-item-text span {
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 600px) {
@@ -131,8 +131,11 @@ nav.is-open .menu-content {
   }
   .menu-content {
     flex-direction: row;
-    top: 0;
-    height: 100vh;
+    top: 85px;
+    height: calc(100vh - 85px);
+  }
+  .menu-item-text span {
+    font-size: 42px;
   }
 }
 
