@@ -19,7 +19,6 @@ function setVideoTriggers(selector, offsetStart = '', offsetEnd = '') {
   const element = document.querySelector(selector);
 
   ScrollTrigger.create({
-    markers: true,
     trigger: element,
     start: `top${offsetStart} center`,
     end: `bottom${offsetEnd} center`,
