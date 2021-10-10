@@ -3,17 +3,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-document.querySelector('#hero-trigger').addEventListener('canplaythrough', () => {
-  document.querySelector('.wrapper').classList.remove('hidden');
-  gsap.to('.load-wrap', { opacity: 0, duration: 0.3, onComplete: () => {
-    document.querySelector('.load-wrap').classList.add('hidden');
-  }});
-  gsap.to('.wrapper', { opacity: 1, duration: 0.3, onComplete: () => {
-    setVideoTriggers('#life-trigger', '-=100', '+=100');
-    setVideoTriggers('#int-trigger', '-=100', '+=100');
-    setVideoTriggers('#hero-trigger', '', window.innerWidth > 600 ? '+=200' : '+=100');
-  }});
-});
+if (window.innerWidth > 600) {
+  document.querySelector('#hero-trigger').addEventListener('canplaythrough', () => {
+    document.querySelector('.wrapper').classList.remove('hidden');
+    gsap.to('.load-wrap', { opacity: 0, duration: 0.3, onComplete: () => {
+      document.querySelector('.load-wrap').classList.add('hidden');
+    }});
+    gsap.to('.wrapper', { opacity: 1, duration: 0.3, onComplete: () => {
+      setVideoTriggers('#life-trigger', '-=100', '+=100');
+      setVideoTriggers('#int-trigger', '-=100', '+=100');
+      setVideoTriggers('#hero-trigger', '', window.innerWidth > 600 ? '+=200' : '+=100');
+    }});
+  });
+}
 
 function setVideoTriggers(selector, offsetStart = '', offsetEnd = '') {
   const element = document.querySelector(selector);
