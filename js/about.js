@@ -23,7 +23,7 @@ let points = [];
 let img;
 
 window.preload = () => {
-  img = loadImage("portrait2.jpg");
+  img = loadImage("https://res.cloudinary.com/iireii/image/upload/v1633834635/Portfolio/portrait2_navdqe.jpg");
 }
 
 window.setup = () => {

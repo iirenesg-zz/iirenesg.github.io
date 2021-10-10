@@ -17,10 +17,6 @@ h2 {
     display: inline-block;
 }
 
-.wrapper {
-    opacity: 0;
-}
-
 .video-hero {
     width: 100vw;
     height: 500px;
@@ -145,6 +141,16 @@ h2 {
     width: 100vw;
     height: 100vh;
     position: fixed;
+    color: #fff;
+}
+
+.load-wrap > p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: calc(50% + 125px);
+    left: 50%;
+    font-size: 24px;
+    color: #0CC2C4;
 }
 
 .lds-ripple {
