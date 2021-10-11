@@ -3,15 +3,6 @@ body {
     color: #fff;
 }
 
-.wrapper {
-    display: block;
-    opacity: 1;
-}
-
-.load-wrap {
-    display: none;
-}
-
 .container {
     max-width: 1200px;
     padding: 0 15px;
@@ -119,12 +110,6 @@ h2 {
 }
 
 @media (min-width: 600px) {
-    .load-wrap {
-        display: block;
-    }
-    .wrapper {
-        opacity: 0;
-    }
     .img-hero {
         display: none;
     }

@@ -15,6 +15,10 @@ if (window.innerWidth > 600) {
       setVideoTriggers('#hero-trigger', '', window.innerWidth > 600 ? '+=200' : '+=100');
     }});
   });
+} else {
+  document.querySelector('.wrapper').classList.remove('hidden');
+  document.querySelector('.wrapper').classList.remove('invisible');
+  document.querySelector('.load-wrap').classList.add('hidden');
 }
 
 function setVideoTriggers(selector, offsetStart = '', offsetEnd = '') {
