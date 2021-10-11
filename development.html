@@ -6,9 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800" rel="stylesheet">
 	<link rel="stylesheet" href="styles/style.css">
-	<link rel="stylesheet" href="styles/inside.css">
+	<link rel="stylesheet" href="styles/dev.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="preconnect" href="https://res.cloudinary.com">
 </head>
 <body>
 	<div class="header">
@@ -34,42 +35,57 @@
 		<ul class="menu-content">
             <li class="menu-item">
                 <a href="about.html" class="menu-link">
-                    <img src="img/texture.jpg" class="js-image" alt="">
+                    <img crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633833873/Portfolio/menu-about_prqgpz.png" class="js-image" alt="">
                     <div class="menu-item-text"><span>About</span></div>
                 </a>
+                <div class="color-slide"></div>
             </li>
-			<li class="menu-item">
-                <a href="design.html" class="menu-link">
-                    <img src="img/texture.jpg" class="js-image" alt="">
-                    <div class="menu-item-text"><span>Design</span></div>
-                </a>
-            </li>
+			
 			<li class="menu-item">
                 <a href="development.html" class="menu-link">
-                    <img src="img/texture.jpg" class="js-image" alt="">
+                    <img crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633833871/Portfolio/menu-dev_kgojmh.jpg" class="js-image" alt="">
                     <div class="menu-item-text"><span>Development</span></div>
                 </a>
+                <div class="color-slide"></div>
             </li>
+            
             <li class="menu-item">
                 <a href="coding.html" class="menu-link">
-                    <img src="img/texture.jpg" class="js-image" alt="">
+                    <img crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633833874/Portfolio/menu-coding_fpca0q.png" class="js-image" alt="">
                     <div class="menu-item-text"><span>Creative Coding</span></div>
                 </a>
+                <div class="color-slide"></div>
+            </li>
+            <li class="menu-item">
+                <a href="design.html" class="menu-link">
+                    <img crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633833864/Portfolio/menu-design_krzyq7.jpg" class="js-image" alt="">
+                    <div class="menu-item-text"><span>Design</span></div>
+                </a>
+                <div class="color-slide"></div>
             </li>
 		</ul>
 	</nav>
 
-
 	<div class="wrapper">
-	    <div class="container">
-
-	    </div>
+        <div class="hero">
+            <img crossorigin="anonymous" src="https://res.cloudinary.com/iireii/image/upload/v1633833871/Portfolio/menu-dev_kgojmh.jpg" class="hero-img" alt="">
+            <h1 class="hero-title">Development</h1>
+        </div>
+        <div class="section">
+            <div class="container center-text section-title">
+                <h2>Data visualization</h2>
+                <p>The Mathematics of AI: A series of exercises developed with the library d3.js.</p>
+                <p>The data used is a categorization of the different areas and concepts of mathematics that have applications in machine learning and data science. It's objective is to be used as a guide when deciding what subjects in mathematics are the most beneficial when getting into AI.</p>
+            </div>
+            <div class="container data-viz-container">
+                <img crossorigin="anonymous" width="600" height="600" class="data-viz-md" src="https://res.cloudinary.com/iireii/image/upload/v1633918586/Portfolio/data1_onepdh.jpg" alt="">
+                <img crossorigin="anonymous" width="600" height="600" class="data-viz-md" src="https://res.cloudinary.com/iireii/image/upload/v1633918589/Portfolio/data4_zvbvgy.png" alt="">
+                <img crossorigin="anonymous" width="1200" height="575" class="data-viz-lg" src="https://res.cloudinary.com/iireii/image/upload/v1633918585/Portfolio/data2_a2nspo.png" alt="">
+            </div>
+        </div>
 	</div>
-	<!-- end barba -->
 
-	<div class="curtain"></div>
 	<script type="module" src="js/main.js"></script>
-	<script type="module" src="js/inside.js"></script>
 
 </body>
 </html>
