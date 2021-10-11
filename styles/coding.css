@@ -122,6 +122,9 @@ h2 {
     .load-wrap {
         display: block;
     }
+    .wrapper {
+        opacity: 0;
+    }
     .img-hero {
         display: none;
     }
